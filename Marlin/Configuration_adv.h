@@ -4034,7 +4034,7 @@
 // @section custom main menu
 
 // Custom Menu: Main Menu
-//#define CUSTOM_MENU_MAIN
+#define CUSTOM_MENU_MAIN
 #if ENABLED(CUSTOM_MENU_MAIN)
   //#define CUSTOM_MENU_MAIN_TITLE "Custom Commands"
   #define CUSTOM_MENU_MAIN_SCRIPT_DONE "M117 User Script Done"
@@ -4042,8 +4042,9 @@
   //#define CUSTOM_MENU_MAIN_SCRIPT_RETURN   // Return to status screen after a script
   #define CUSTOM_MENU_MAIN_ONLY_IDLE         // Only show custom menu when the machine is idle
 
-  #define MAIN_MENU_ITEM_1_DESC "Home & UBL Info"
-  #define MAIN_MENU_ITEM_1_GCODE "G28\nG29 W"
+  #define MAIN_MENU_ITEM_1_DESC "Park Nozzle"
+  #define MAIN_MENU_ITEM_1_GCODE "G28"
+  #define MAIN_MENU_ITEM_1_GCODE "G27"
   //#define MAIN_MENU_ITEM_1_CONFIRM          // Show a confirmation dialog before this action
 
   #define MAIN_MENU_ITEM_2_DESC "Preheat for " PREHEAT_1_LABEL
